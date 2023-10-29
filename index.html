@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .glass{
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+        body
+        {
+            background: #202b2f ;
+            width: 100vw;
+            text-decoration: none;
+            list-style: none;
+            font-family:'Sometype Mono', monospace;
+            color:whitesmoke;
+        }
+        header
+        {
+            width: 100%;
+            height: 70px;
+            background: rgb(80, 80, 103);
+        }
+        nav
+        {
+          margin: auto;
+          width: 80%; 
+          display: flex; 
+          justify-content: space-between;
+          line-height: 70px;
+        }
+        h1
+        {
+            color:aquamarine;
+            letter-spacing: 5px;
+            font-family: 700;
+        }
+        ul
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            list-style: none;
+        }
+        ul li a 
+        {
+            padding: 5px 15px;
+            text-transform: capitalize;
+            margin: 10px;
+        }
+        ul li a:hover
+        {
+         background: cyan;
+         border-radius: 20%;
+         color: black;
+         font-weight: 700;
+         box-shadow: 0 0 1em greenyellow;
+        }
+        .container 
+        {
+            width: 80%;
+            height: 100vh;
+            margin: 6% auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .A
+        {
+            width: 50%;
+            height: 80%;
+            text-align: center;
+            perspective: 800px;
+        }
+        .tit
+        {
+         font-size: 1.2em;
+         word-spacing: 7px;
+         text-transform: capitalize;
+         line-height: 1.5em;
+        }
+        span
+        {
+            color: rgb(47, 70, 97);
+            font-size: 1.6em;
+            text-shadow: 1px 1px rgb(7, 197, 140);
+        }
+        p
+        {
+            margin: 2em;
+        }
+        .para
+        {
+            color: rgb(199, 218, 212);
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button
+        {
+            margin: 1em;
+            padding: 10px 15px;
+            width: fit-content;
+            border-radius: 100px;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            color: rgb(198, 33, 148);
+            background: rgb(65, 229, 136);
+            box-shadow: 0 0 1.5em rgb(81, 178, 205);
+            transition: all .5s linear;
+        }
+        button:hover
+        {
+         box-shadow: 0 0 .8em rgb(65, 206, 9);
+         letter-spacing: 1px;
+         font-weight: bolder;
+        }
+        .right
+        {
+            width: fit-content;
+            height: 80%;
+        }
+        .shape
+        {
+            border:  solid transparent;
+            width: 90%;
+            height: 80%;
+            background: rgb(215, 170, 156);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            animation: run 4s linear infinite alternate-reverse;
+        }
+        @keyframes run {
+            100% {
+                transform: translateZ(-30px) rotateX(20deg);
+            }
+        }
+        .right img{
+            padding: 50px 50px;
+            margin-left: 30px;
+            width: 270px;
+            height: 200px;
+            position: relative;
+            top: -83%;
+            right:5%;
+            filter: drop-shadow(0 0 .9em rgb(53, 9, 230)) saturate(150%) brightness(130%);
+            animation: up-down 4s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes up-down
+        {
+            0% {
+                transform: translateZ(80px);
+            }
+            100% {
+                transform: translateY(20px) translate(50px);
+            }
+        }
+        /*=======================
+            About targeting
+          =======================*/
+          .socialIcons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    right: 20px;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+.socialIcons a{
+    color: #fff;
+    font-size: 22px;
+    transition: 0.4s;
+}
+.socialIcons a:hover{
+    transform: scale(1.4);
+}
+.socialIcons span{
+    color: #fff;
+    font-weight: 500;
+    transform: rotate(90deg);
+    margin-bottom: 40px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>About My Page</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="./jVideo.html">Video</a></li>
+                <li><a href="./aboutJ.html">Portfolio</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container glass">
+            <div class="left A">
+            <p class="tit">
+                Hello <br>I'm <span>Jassal</span><span>Keneth</span>
+            </p>
+            <p class="tit">
+             I'm a <br> <span>College</span><span>Student</span>
+            </p>
+            <p class="para">
+                i like eating alone, but im not lonely. 
+                I can be in the house whole day without wanting to go out but i love traveling and roadtrips.I can be a social person but i dont like to deal with people in groups at the same time. 
+                Noises easily distracts me but i am load.
+            </p>
+            
+           <a href="./aboutJ.html">
+            <button>
+                About Me
+            </button>
+           </a>
+            </div>
+
+            <div class="right A">
+                <div class="shape"></div>
+               <img src="./img3.png" alt="">
+            </div>
+
+           
+            </div>
+            <div class="socialIcons">
+                <h1>SOCIAL MEDIA</h1>
+                <a href="https://www.facebook.com/jassalkeneth24"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@jassalkenethquinez"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </section>
+    </main>
+   
+
+</body>
+</html>

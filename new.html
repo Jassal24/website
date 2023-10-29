@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animated.gif {
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  animation: animate 1s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(.5);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section id="desc">
+          <h2>Burgers Done Right</h2>
+          <hr>
+          <p>With high-quality ingredients</p>
+        </section>
+      </div>
+      <div>
+        <img id="animated-gif" src="https://media.giphy.com/media/l0Iy1WEZpJQ6V5SVO/giphy.gif" alt="cheese burger gif" />
+      </div>
+</body>
+</html>

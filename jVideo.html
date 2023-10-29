@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *
+      {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .hehe
+      {
+        height: 5em;
+        margin-left: 100px;
+        position: absolute;
+        margin-top: 25px;
+        font-style: italic;
+        font-size: large;
+      }
+      .container
+      {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(45deg,#75b879,#423791,#4aec7b, #4f75e6);
+        background-size: 300% 300%;
+        animation: color 12s ease-in-out infinite;
+      }
+      @keyframes color
+      {
+        0%
+        {
+            background-position: 0 50%;
+        }
+        50%
+        {
+            background-position: 100% 50%;
+        }
+        100%
+        {
+            background-position: 0 50%;
+        }
+      }
+      .vid
+      {
+        margin-left: 500px ;
+        height: 500px;
+        margin-top: 50px;
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="hehe"><h1>My Video</h1></div>
+    </nav>
+        
+        <div class="container">
+            <div class="vid">
+                <video  controls src="./jjjjjj.mp4"></video>
+            </div>
+        </div>
+
+      
+          
+        
+   
+</body>
+</html>

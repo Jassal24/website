@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            overflow: hidden;
+        }
+        .banner1,.banner2,.banner3,.banner4
+        {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          
+        }
+        img
+        {
+            width: 120%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: zoomout 3s linear infinite;
+        }
+        @keyframes zoomout
+        {
+            100%
+            {
+                width: 100%;
+            }
+        }
+        .text-box
+        {
+            width: 600px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            color: #fff;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .text-box h1{
+            margin-bottom: 40px;
+            
+        }
+        .text-box p
+        {
+            font-size: 14px;
+            line-height: 28px;
+            margin-top: 80px;
+        }
+        .text-box span
+        {
+            background:green;
+            height: 4px;
+            width: 250px;
+            position: absolute;
+            left: 0;
+            margin-left: 150px;
+            margin-bottom: 5px;
+            
+        }
+        .banner1
+        {
+            animation: slide1 12s linear infinite;
+        }
+        .banner2
+        {
+            animation: slide2 12s linear infinite;
+        }
+        .banner3
+        {
+            animation: slide3 12s linear infinite;
+        }
+        .banner4
+        {
+            animation: slide4 12s linear infinite;
+        }
+        @keyframes slide1
+        {
+            0%
+            {
+             visibility: visible;
+            }
+            25%
+            {
+             visibility: hidden;
+            }
+            50%
+            {
+             visibility: hidden;
+            }
+            75%
+            {
+             visibility: hidden;
+            }
+            100%
+            {
+             visibility: visible;
+            }
+        }
+
+        @keyframes slide2
+        {
+            0%
+            {
+             visibility: hidden;
+            }
+            25%
+            {
+             visibility: hidden;
+            }
+            50%
+            {
+             visibility: visible;
+            }
+            75%
+            {
+             visibility: hidden;
+            }
+            100%
+            {
+             visibility: hidden;
+            }
+        }
+
+
+        @keyframes slide3
+        {
+            0%
+            {
+             visibility: hidden;
+            }
+            25%
+            {
+             visibility: hidden;
+            }
+            50%
+            {
+             visibility: hidden;
+            }
+            75%
+            {
+             visibility: visible;
+            }
+            100%
+            {
+             visibility: hidden;
+            }
+        }
+
+        @keyframes slide4
+        {
+            0%
+            {
+             visibility: hidden;
+            }
+            25%
+            {
+             visibility: hidden;
+            }
+            50%
+            {
+             visibility: hidden;
+            }
+            75%
+            {
+             visibility: hidden;
+            }
+            100%
+            {
+             visibility: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner1">
+    <img src="./pro.jpg" alt="">
+    <div class="text-box">
+        <h1>My Passion Where I Dont Belong</h1>
+        <span></span>
+        <p>
+            I'm not dedicated as someone to pursue this dream,
+            But here i am doing something that makes me feel i don't Belong
+            wherein i felt something missing in my life which is to write some code 
+            but i dont have the inspiration to go with the flow.
+            I'm lazy as i am right now but i'm doing what my body wants.
+        </p>
+    </div>
+    </div>
+
+    <div class="banner2">
+        <img style="height: 816; width: 1456;" src="./abno.jpg" alt="">
+        <div class="text-box">
+            <h1>It's not easy to face the present</h1>
+            <span></span>
+            <p>
+                I'm not dedicated as someone to pursue this dream,
+                But here i am doing something that makes me feel i don't Belong
+                wherein i felt something missing in my life which is to write some code 
+                but i dont have the inspiration to go with the flow.
+                I'm lazy as i am right now but i'm doing what my body wants.
+            </p>
+        </div>
+        </div>
+
+        <div class="banner3">
+            <img style="height: 816; width: 1456;"  src="./bilog.jpg" alt="">
+            <div class="title">
+                <h1> ANGAS MO PAR</h1>
+                <span></span>
+                <p>
+                    I'm not dedicated as someone to pursue this dream,
+                    But here i am doing something that makes me feel i don't Belong
+                    wherein i felt something missing in my life which is to write some code 
+                    but i dont have the inspiration to go with the flow.
+                    I'm lazy as i am right now but i'm doing what my body wants.
+                </p>
+            </div>
+            </div>
+
+            <div class="banner4">
+                <img style="height: 816; width: 1456;"  src="./car.jpg" alt="">
+                <div class="title">
+                    <h1>lala mo abno</h1>
+                    <span></span>
+                    <p>
+                        I'm not dedicated as someone to pursue this dream,
+                        But here i am doing something that makes me feel i don't Belong
+                        wherein i felt something missing in my life which is to write some code 
+                        but i dont have the inspiration to go with the flow.
+                        I'm lazy as i am right now but i'm doing what my body wants.
+                    </p>
+                </div>
+                </div>
+</body>
+</html>
